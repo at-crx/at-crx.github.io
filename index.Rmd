@@ -1,0 +1,8 @@
+---
+title: "Home page"
+output: html_document
+---
+
+Welcome! This is the homepage for Amanda Tsai's personal website.
+
+You can learn more about me [here](about.html) or look around using the navigation bar.
