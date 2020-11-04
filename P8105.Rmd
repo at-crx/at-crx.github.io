@@ -1,0 +1,7 @@
+---
+title: "P8105 Work"
+output: html_document
+---
+
+Here are some plots I created in my P8105 Data Science I course. 
+
