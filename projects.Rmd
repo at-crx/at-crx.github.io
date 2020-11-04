@@ -5,3 +5,59 @@ output: html_document
 
 Here are some personal projects I've done over the years. 
 
+----
+
+#### Breath-Sensing Early Lung Cancer Screening System 
+###### FlexSurface Inc.
+###### Binghamton, NY   Jan 2019 - July 2019
+
+● Analyzed signals from sensing arrays with pattern recognition and machine learning to precisely differentiate between normal individuals and patients
+
+● Assisted in the development of a mobile app that collects data from a breath-sensing device equipped with nanoparticle-structured thin film and provides dependable tracking and display of test results over time.
+
+● Compared multiple statistical methods in the analyzation of data collected from the mobile app
+
+----
+
+#### Significant Mapping for Clinical Case Reports 
+###### NIH Center of Excellence for Big Data Computing
+###### Los Angeles, CA   June 2018 – Dec 2018
+
+● Performed text mining, data extraction and cleaning of 1.8 million clinical case reports
+
+● Developed functions for a R Shiny App that provides visualization of the worldwide geographic
+distribution of clinical case reports according to MeSH terms
+
+● Proposed and upgraded R Shiny App to now support mapping of several diseases and MeSH terms
+from predetermined datasets and datasets generated from PMID/phrase searches from PubMed
+
+● Determined association between medical terms and occurrence of diseases using statistical
+methods
+
+----
+
+#### Number Recognition For Game Solver 
+###### Nov 2018 - Jan 2019 
+
+● Captured 4-numbers-game screen display with Raspberry Pi and a connected monitor
+
+● Developed program to realign the game capture, recognize only the relevant numbers and produce
+accurate solutions
+
+----
+
+#### Facial Recognition Music Player 
+###### Sept 2018 - Dec 2018
+
+● Developed recognition program to allow user to shuffle through music playlist with facial recognition
+of smiles, frowns, and winks
+
+----
+
+#### Carbon Fiber Electrode Cell Amperometry 
+###### University of Washington, Electrochemistry Group
+###### Seattle, WA   July 2016 - Sept 2016
+
+● Fabricated carbon fiber electrodes and conducted cell amperometry experiments to collect single- cell measurements
+
+● Analyzed carbon fiber electrode characterization data to determine performance of electrodes

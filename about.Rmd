@@ -4,7 +4,15 @@ output: html_document
 ---
 [CV](/files/cv_amanda_tsai.pdf)
 
-I am currently pursuing a master's degree in Biostatistics at Columbia University's Mailman School of Public Health. I graduated from UCLA in 2019 with a B.S. in Mathematics and Economics and a specialization in Computing. 
+
+I am currently pursuing a master's degree in Biostatistics at Columbia University's Mailman School of Public Health. Prior to this, I attended UCLA from 2015 to 2019 and graduated with a B.S. in Mathematics and Economics and a specialization in Computing. During my undergraduate, I worked with the NIH Center of Excellence for Big Data Computing on the significant mapping of clinical case reports, as well as with FlexSurface Inc. on a breath-sensing early lung cancer screening system. I also updated databases containing info on over 3500 center contacts as an assistant at the UCLA Asian American Studies Center, and arranged 60 years of archival material that was used as a main resource for the memories project documenting the center’s history.
+
+My research interests center on the analysis of clinical and genetic data concerning congenital lung diseases and the development of machine learning and natural language processing approaches to retrieving information from clinical case reports. You can read more about my research projects [here](projects.html). 
+
+
+In my spare time, I work as a tutor for the Asian American Tutorial Project. I provide tutoring in English and Math and mentoring services for 3 fifth-grade students from under-priviledged communities in Los Angeles for 3 hours weekly. I am also a language tutor for the UCLA Dashew Center Language program where I assist 3 adult English Language learners weekly. 
+
+
 
 
 

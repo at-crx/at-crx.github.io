@@ -8,4 +8,4 @@ This is the homepage for Amanda Tsai's personal website.
 You can learn more about me [here](about.html) or look around using the navigation bar.
 
 This is a photo of some alpacas that I took recently.
-<img scr = “images/IMG_0995.jpg” style = “width:75%”>
+![](/images/IMG_0995.jpg)

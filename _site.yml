@@ -9,8 +9,6 @@ navbar:
       href: projects.html
     - text: "P8105"
       href: P8105.html
-    - icon: fa-map-marker-alt fa-lg
-      href: location.html
     - icon: fa-envelope fa-lg
       href: mailto:<at3535@cumc.columbia.edu>
     - icon: fa-github fa-lg
