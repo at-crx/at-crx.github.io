@@ -4,5 +4,7 @@ output: html_document
 ---
 [CV](/files/cv_amanda_tsai.pdf)
 
-I am currently pursuing a master's degree in Biostatistics at Columbia University's Mailman School of Public Health. I graduated from UCLA with a B.S. in Mathematics and Economics and a specialization in Computing. 
+I am currently pursuing a master's degree in Biostatistics at Columbia University's Mailman School of Public Health. I graduated from UCLA in 2019 with a B.S. in Mathematics and Economics and a specialization in Computing. 
+
+
 

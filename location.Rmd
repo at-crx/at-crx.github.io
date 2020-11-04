@@ -1,0 +1,6 @@
+---
+title: "Places"
+output: html_document
+---
+
+I am currently residing in Seattle! 
