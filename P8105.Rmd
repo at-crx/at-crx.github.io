@@ -1,7 +1,66 @@
 ---
 title: "P8105 Work"
-output: html_document
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
-Here are some plots I created in my P8105 Data Science I course. 
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+library(htmlwidgets)
+
+data("instacart")
+day_value = c(0,1,2,3,4,5,6)
+day_label = c("Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r bar, echo = FALSE}
+instacart %>%
+  count(aisle) %>% 
+  filter(n > 10000) %>%
+  mutate(aisle = fct_reorder(aisle, n)) %>% 
+  plot_ly(x = ~aisle, y = ~n, color = ~aisle, type = "bar", colors = "viridis")
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r scatter, echo = FALSE}
+instacart %>%
+  group_by(aisle) %>% 
+  count(product_name) %>% 
+  mutate(rank = min_rank(desc(n))) %>% 
+  filter(rank < 4) %>% 
+  arrange(desc(n)) %>%
+  plot_ly( x = ~product_name, y = ~n, color = ~aisle, type = "scatter", mode = "markers", alpha = 0.5)
+```
+
+### Chart C
+
+```{r box_plot, echo = FALSE}
+
+instacart %>%
+  filter(aisle == "fresh vegetables") %>%
+  mutate(order_dow = plyr::mapvalues(order_dow, from = day_value, to = day_label)) %>%
+  mutate(order_dow = as.factor(order_dow)) %>%
+  plot_ly(x = ~order_dow, y = ~order_hour_of_day, color = ~order_dow, type = "box", colors = "viridis") %>%
+  layout(title = "Hour of day for ordering vegetables for each day of the week ", 
+         xaxis = list(title = "Ordering Day"),
+         yaxis = list(title = "Ordering Hour"))
+```
+
+
+
 
