@@ -22,20 +22,22 @@ day_label = c("Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday", "
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Top Selling Aisles
 
 ```{r bar, echo = FALSE}
 instacart %>%
   count(aisle) %>% 
   filter(n > 10000) %>%
   mutate(aisle = fct_reorder(aisle, n)) %>% 
-  plot_ly(x = ~aisle, y = ~n, color = ~aisle, type = "bar", colors = "viridis")
+  plot_ly(x = ~aisle, y = ~n, color = ~aisle, type = "bar", colors = "viridis") %>%
+  layout(title = "Top Selling Aisles", 
+         yaxis = list(title = "Ordering Hour"))
 ```
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Top 3 Selling products in each aisle
 
 ```{r scatter, echo = FALSE}
 instacart %>%
@@ -44,10 +46,12 @@ instacart %>%
   mutate(rank = min_rank(desc(n))) %>% 
   filter(rank < 4) %>% 
   arrange(desc(n)) %>%
-  plot_ly( x = ~product_name, y = ~n, color = ~aisle, type = "scatter", mode = "markers", alpha = 0.5)
+  plot_ly( x = ~product_name, y = ~n, color = ~aisle, type = "scatter", mode = "markers", alpha = 0.5) %>%
+  layout(title = "Top 3 Selling products per aisle ", 
+         yaxis = list(title = "Total Sales"))
 ```
 
-### Chart C
+### Hour of day for ordering fresh vegetables each day of the week 
 
 ```{r box_plot, echo = FALSE}
 
